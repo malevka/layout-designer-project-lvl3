@@ -1,0 +1,39 @@
+{
+ "name": "layout-designer-project-lvl3",
+ "description": "A third project during Hexlet course of layout",
+ "version": "1.0.0",
+ "main": "",
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/malevka/layout-designer-project-lvl3.git"
+ },
+ "author": "Maleva Olga",
+ "license": "ISC",
+ "bugs": {
+  "url": "https://github.com/malevka/layout-designer-project-lvl3/issues"
+ },
+ "homepage": "https://github.com/malevka/layout-designer-project-lvl3#readme",
+ "devDependencies": {
+  "@babel/core": "^7.12.10",
+  "@babel/preset-env": "^7.12.11",
+  "@babel/register": "^7.12.10",
+  "gulp": "^4.0.2",
+  "gulp-concat": "^2.6.1",
+  "gulp-pug": "^4.0.1",
+  "gulp-sass": "^4.1.0",
+  "gulp-svg-sprite": "^1.5.0",
+  "htmlhint": "^0.14.2",
+  "node-sass": "^5.0.0",
+  "stylelint": "^13.9.0",
+  "stylelint-config-rational-order": "^0.1.2",
+  "stylelint-config-standard": "^20.0.0",
+  "stylelint-order": "^4.1.0",
+  "stylelint-scss": "^3.18.0"
+ },
+ "dependencies": {
+  "bootstrap": "^4.6.0"
+ }
+}
