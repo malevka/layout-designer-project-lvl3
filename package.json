@@ -4,7 +4,9 @@
  "version": "1.0.0",
  "main": "",
  "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1"
+  "stylelint": "stylelint ./app/scss/**/*.scss",
+  "htmlhint": "htmlhint ./app/build/*.html",
+  "deploy": "surge ./app/build"
  },
  "repository": {
   "type": "git",
@@ -31,9 +33,11 @@
   "stylelint-config-rational-order": "^0.1.2",
   "stylelint-config-standard": "^20.0.0",
   "stylelint-order": "^4.1.0",
-  "stylelint-scss": "^3.18.0"
+  "stylelint-scss": "^3.18.0",
+  "surge": "^0.21.7"
  },
  "dependencies": {
-  "bootstrap": "^4.6.0"
+  "bootstrap": "^4.6.0",
+  "pug": "^2.0.4"
  }
 }
