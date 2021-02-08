@@ -1,0 +1,15 @@
+$radius-value: 1rem;
+$radiuses: (
+  "radius-left-top" : "border-top-left-radius",
+  "radius-left" : ("border-top-left-radius", "border-bottom-left-radius"),
+  "radius-right" : ("border-top-right-radius", "border-bottom-right-radius"),
+  "radius" : "border-radius"
+);
+
+@each $name, $value in $radiuses {
+  .#{$name} {
+    @each $radius in $value {
+      #{$radius}: #{$radius-value};
+    }
+  }
+}
