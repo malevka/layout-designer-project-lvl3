@@ -1,0 +1,24 @@
+.contacts {
+  height: 100%;
+
+  @include hide-scrollbar;
+}
+
+.contact-item {
+  color: var(--dark);
+
+  & .status {
+    color: var(--secondary);
+  }
+
+  @include hover() {
+    color: var(--light);
+    text-decoration: none;
+
+    background-color: var(--primary);
+
+    & .status {
+      color: var(--gray);
+    }
+  }
+}
