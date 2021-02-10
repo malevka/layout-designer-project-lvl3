@@ -7892,25 +7892,52 @@ a.text-gray:hover, a.text-gray:focus {
   .contacts {
     -ms-overflow-style: none;
     scrollbar-width: none;
-    overflow-y: auto;
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    overflow-y: auto; }
   .contacts::-webkit-scrollbar {
     display: none; }
 
-.contact-item {
+.contacts-item {
   color: var(--dark); }
-  .contact-item .status {
+  .contacts-item .status {
     color: var(--secondary); }
-  .contact-item:hover {
-    background-color: var(--primary);
+  .contacts-item:hover {
+    color: var(--light);
     text-decoration: none;
-    color: var(--light); }
-    .contact-item:hover .status {
+    background-color: var(--primary); }
+    .contacts-item:hover .status {
       color: var(--gray); }
 
+.chats {
+  height: 100%; }
+  .chats {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    overflow-y: auto; }
+  .chats::-webkit-scrollbar {
+    display: none; }
+
+.chats-item {
+  color: var(--dark); }
+  .chats-item .message {
+    color: var(--secondary); }
+  .chats-item:hover {
+    color: var(--light);
+    text-decoration: none;
+    background-color: var(--primary); }
+    .chats-item:hover .message {
+      color: var(--light); }
+
 .avatar {
-  border-radius: 50%;
-  width: 50px; }
+  width: 50px;
+  border-radius: 50%; }
+
+.header {
+  max-height: 4.5rem; }
+
+.icon, .cls-1 {
+  height: 100%; }
 
 .radius-left-top {
   border-top-left-radius: 1rem !important; }

@@ -14,7 +14,14 @@
             <div class="col order-2 pt-5 px-4">
               <div>TTT</div>
             </div>
-            <div class="header bg-primary text-light radius-md-left-top py-4"></div>
+            <div class="header bg-primary text-light radius-md-left-top py-4" id="myTab" role="tablist">
+              <ul class="nav nav-pills nav-fill h-100">
+                <li class="nav-item h-100" role="presentation"><a class="text-light h-100" id="undefined" href="#" role="pill" data-toggle="pill" aria-controls="undefined" aria-selected="undefined"><img class="icon" src="./images/icons/logo.svg"><span class="small ml-2"></span></a></li>
+                <li class="nav-item h-100" role="presentation"><a class="text-light h-100" id="contacts-tab" href="#contacts" role="pill" data-toggle="pill" aria-controls="contacts" aria-selected="true"><img class="icon" src="./images/icons/people.svg"><span class="small ml-2">Контакты</span></a></li>
+                <li class="nav-item h-100" role="presentation"><a class="text-light h-100" id="chats-tab" href="#chats" role="pill" data-toggle="pill" aria-controls="chats" aria-selected="false"><img class="icon" src="./images/icons/chat.svg"><span class="small ml-2">Сообщения</span></a></li>
+                <li class="nav-item h-100" role="presentation"><a class="text-light h-100" id="profile-tab" href="#profile" role="pill" data-toggle="pill" aria-controls="profile" aria-selected="false"><img class="icon" src="./images/icons/person.svg"><span class="small ml-2">Профиль</span></a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="right-side d-none d-xl-flex col-xl-8 align-items-center justify-content-center">
@@ -22,4 +29,7 @@
       </div>
     </div>
   </body>
+  <script src="../../node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </html>
