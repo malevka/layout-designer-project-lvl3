@@ -1,0 +1,24 @@
+.chats {
+  height: 100%;
+
+  @include hide-scrollbar;
+}
+
+.chats-item {
+  color: var(--dark);
+
+  & .message {
+    color: var(--secondary);
+  }
+
+  @include hover() {
+    color: var(--light);
+    text-decoration: none;
+
+    background-color: var(--primary);
+
+    & .message {
+      color: var(--light);
+    }
+  }
+}

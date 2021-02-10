@@ -1,0 +1,14 @@
+- var chats = [{ name: "Вениамин Редакторович", last_message: {text: "O_o", time: "11:45"}, avatar: "/images/avatar_4.jpg"},{name: "Джедай Падаванов", last_message: {text: "Привет, скоро третий проект? Уже скоро надо будет выложить", time: "10:12"},avatar: "/images/avatar_2.jpg"}, {name: "Алексей Примадонин", last_message: {text: "Тесты упали >_<", time: "08:53"}, avatar: "/images/avatar_3.jpg"}];
+- var title = "Чаты";
+div(class="tab-pane fade h-100" id="chats" role="tabpanel" aria-labelledby="chats-tab")
+    h2(class="h2 font-weight-bold") #{title}
+    ul(class="chats list-unstyled")
+      each item in chats
+        li(class="border-bottom border-gray")
+            a(href="#" class="chats-item media align-items-center p-3")
+                img(src=`.${item.avatar}` class="avatar" alt=`Avatar`)
+                div(class="media-body ml-4 my-2 overflow-hidden")
+                    div(class="d-flex justify-content-between")
+                        h5(class="h5 m-0") #{item.name}
+                        div(class="small text-muted") #{item.last_message.time}
+                    div(class="small text-truncate") #{item.last_message.text}
