@@ -1,5 +1,5 @@
 - var contacts = {А: [{name: "Алексей Примадонин", status: "Онлайн", avatar: "/images/avatar_3.jpg"}], B: [{ name: "Вениамин Редакторович", status: "Онлайн",avatar: "/images/avatar_4.jpg"}],Д: [{name: "Джедай Падаванов",status: "Был онлайн вчера",avatar: "/images/avatar_2.jpg"}],К: [{name: "Кодовёнок Хекслетович",status: "Был онлайн 3 часа назад",avatar: "/images/avatar_1.jpg"},{name: "Королева Верстальщина",status: "Была онлайн вчера",avatar: "/images/avatar_5.jpg"}],П: [{name: "Питонист Джангович",status: "Был онлайн вчера",avatar: "/images/avatar_6.jpg"}]};
-div(class="h-100")
+div(class="tab-pane show fade active h-100" id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
     h2(class="h2 font-weight-bold") Контакты
     ul(class="contacts list-unstyled")
       each val, index in contacts
@@ -8,7 +8,7 @@ div(class="h-100")
               each item in val
                   ul(class="list-unstyled")
                       li(class="border-bottom border-gray")
-                        a(href="#" class="contact-item media align-items-center p-3")
+                        a(href="#" class="contacts-item media align-items-center p-3")
                             img(src=`.${item.avatar}` class="avatar" alt=`Avatar`)
                             div(class="media-body ml-4 my-2")
                               h5(class="h5 m-0") #{item.name}
