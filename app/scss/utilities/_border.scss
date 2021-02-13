@@ -1,0 +1,19 @@
+$border-value: 1px solid #efefef !important;
+
+$borders: "top","right", "left", "bottom";
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .border#{$infix} {
+      border: #{$border-value};
+    }
+
+    @each $border in $borders {
+      .border#{$infix}-#{$border} {
+        border-#{$border}: #{$border-value};
+      }
+    }
+  }
+}

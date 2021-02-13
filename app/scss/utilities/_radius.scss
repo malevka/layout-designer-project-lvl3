@@ -3,17 +3,20 @@ $radiuses: (
   "left-top" : "border-top-left-radius",
   "left" : ("border-top-left-radius", "border-bottom-left-radius"),
   "right" : ("border-top-right-radius", "border-bottom-right-radius"),
-  "all" : "border-radius"
 );
 
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
+    .radius#{$infix} {
+      border-radius: #{$radius-value};
+    }
+
     @each $name, $value in $radiuses {
       .radius#{$infix}-#{$name} {
         @each $radius in $value {
-          #{$radius}: #{$radius-value} !important;
+          #{$radius}: #{$radius-value};
         }
       }
     }
