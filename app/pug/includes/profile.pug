@@ -1,0 +1,19 @@
+- var title = "Профиль";
+- var user = { name: "Кодовёнок Хекслетович", avatar: "./images/avatar_1.jpg", about: "Милый и скромный помощник начинающих разработчиков. Люблю JavaScript"};
+- var info =[{title: "Страна", value: "Москва, Россия", icon: "./images/icons/globe.svg"}, {title: "Телефон", value: "+7 (499) 123-45-67", icon: "./images/icons/telephone.svg"}, {title: "Email", value: "nikita.m@hexlet.io", icon: "./images/icons/envelope.svg"},{title: "Twitter", value: "@n__mikhaylov", icon: "./images/icons/people.svg"}];
+div(id="profile" class="tab-pane fade h-100")
+    h2(class="h2 font-weight-bold") #{title}
+    div(class="block-scrollable ")
+        div(class="card mb-3 text-center border-0")
+            div(class="card-body")
+                img(class="my-3 rounded-circle" width="90px" src=user.avatar alt="User photo in profile section")
+                p(class="card-title mb-3 font-weight-bold") #{user.name}
+                p(class="card-text mb-6 text-muted ") #{user.about}
+        ul(class="list-group list-group-flush mt-4 pt-3 px-2")
+          each item in info
+            li(class="list-group-item mb-1 px-1 small border-gray")
+                div(class="d-flex justify-content-between")
+                    div
+                        div(class="text-muted") #{item.title}
+                        div #{item.value}
+                    img(src=item.icon alt="Info item icon")
