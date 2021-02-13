@@ -7,26 +7,26 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
   </head>
   <body class="bg-gray">
-    <div class="container-xxl vh-100 bg-gray p-4 overflow-hidden">
+    <div class="container-xxl vh-100 bg-gray p-md-4 overflow-hidden">
       <div class="row h-100 radius-md-all bg-white">
         <div class="left-side col-12 col-lg-4 border-right border-gray h-100 overflow-hidden">
           <div class="d-flex flex-column-reverse flex-lg-column h-100">
-            <div class="header bg-primary text-light radius-md-left-top py-4" id="myTab" role="tablist">
+            <div class="header bg-primary text-light radius-md-left-top py-4" id="menu" role="tablist">
               <ul class="nav nav-pills nav-fill h-100">
-                <li class="nav-item h-100" role="presentation"><a class="text-light h-100" id="undefined" href="#" role="pill" data-toggle="pill" aria-controls="undefined" aria-selected="undefined"><img class="icon" src="./images/icons/logo.svg"><span class="small ml-2"></span></a></li>
-                <li class="nav-item h-100" role="presentation"><a class="text-light h-100" id="contacts-tab" href="#contacts" role="pill" data-toggle="pill" aria-controls="contacts" aria-selected="true"><img class="icon" src="./images/icons/people.svg"><span class="small ml-2">Контакты</span></a></li>
-                <li class="nav-item h-100" role="presentation"><a class="text-light h-100" id="chats-tab" href="#chats" role="pill" data-toggle="pill" aria-controls="chats" aria-selected="false"><img class="icon" src="./images/icons/chat.svg"><span class="small ml-2">Сообщения</span></a></li>
-                <li class="nav-item h-100" role="presentation"><a class="text-light h-100" id="profile-tab" href="#profile" role="pill" data-toggle="pill" aria-controls="profile" aria-selected="false"><img class="icon" src="./images/icons/person.svg"><span class="small ml-2">Профиль</span></a></li>
+                <li class="nav-item h-100" role="presentation"><a class="text-light h-100" id="undefined" href="#" role="pill" data-toggle="pill" aria-controls="undefined" aria-selected="undefined"><img class="icon" src="./images/icons/logo.svg" alt="Menu icon"><span class="small ml-2"></span></a></li>
+                <li class="nav-item h-100" role="presentation"><a class="text-light h-100" id="contacts-tab" href="#contacts" role="pill" data-toggle="pill" aria-controls="contacts" aria-selected="true"><img class="icon" src="./images/icons/people.svg" alt="Menu icon"><span class="small ml-2">Контакты</span></a></li>
+                <li class="nav-item h-100" role="presentation"><a class="text-light h-100" id="chats-tab" href="#chats" role="pill" data-toggle="pill" aria-controls="chats" aria-selected="false"><img class="icon" src="./images/icons/chat.svg" alt="Menu icon"><span class="small ml-2">Сообщения</span></a></li>
+                <li class="nav-item h-100" role="presentation"><a class="text-light h-100" id="profile-tab" href="#profile" role="pill" data-toggle="pill" aria-controls="profile" aria-selected="false"><img class="icon" src="./images/icons/person.svg" alt="Menu icon"><span class="small ml-2">Профиль</span></a></li>
               </ul>
             </div>
             <div class="py-5 px-4 h-100 overflow-hidden tab-content">
               <div class="tab-pane show fade active h-100" id="contacts" role="tabpanel" aria-labelledby="contacts-tab">
                 <h2 class="h2 font-weight-bold">Контакты</h2>
-                <ul class="contacts list-unstyled">
+                <ul class="block-scrollable list-unstyled">
                   <li class="mb-3">
                     <div class="text-muted mt-5 mb-3">А</div>
                     <ul class="list-unstyled">
-                      <li class="border-bottom border-gray"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_3.jpg" alt="Avatar">
+                      <li class="shadow"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_3.jpg" alt="Avatar">
                           <div class="media-body ml-4 my-2">
                             <h5 class="h5 m-0">Алексей Примадонин</h5>
                             <div class="status small">Онлайн</div>
@@ -36,7 +36,7 @@
                   <li class="mb-3">
                     <div class="text-muted mt-5 mb-3">B</div>
                     <ul class="list-unstyled">
-                      <li class="border-bottom border-gray"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_4.jpg" alt="Avatar">
+                      <li class="shadow"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_4.jpg" alt="Avatar">
                           <div class="media-body ml-4 my-2">
                             <h5 class="h5 m-0">Вениамин Редакторович</h5>
                             <div class="status small">Онлайн</div>
@@ -46,7 +46,7 @@
                   <li class="mb-3">
                     <div class="text-muted mt-5 mb-3">Д</div>
                     <ul class="list-unstyled">
-                      <li class="border-bottom border-gray"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_2.jpg" alt="Avatar">
+                      <li class="shadow"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_2.jpg" alt="Avatar">
                           <div class="media-body ml-4 my-2">
                             <h5 class="h5 m-0">Джедай Падаванов</h5>
                             <div class="status small">Был онлайн вчера</div>
@@ -56,14 +56,14 @@
                   <li class="mb-3">
                     <div class="text-muted mt-5 mb-3">К</div>
                     <ul class="list-unstyled">
-                      <li class="border-bottom border-gray"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_1.jpg" alt="Avatar">
+                      <li class="shadow"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_1.jpg" alt="Avatar">
                           <div class="media-body ml-4 my-2">
                             <h5 class="h5 m-0">Кодовёнок Хекслетович</h5>
                             <div class="status small">Был онлайн 3 часа назад</div>
                           </div></a></li>
                     </ul>
                     <ul class="list-unstyled">
-                      <li class="border-bottom border-gray"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_5.jpg" alt="Avatar">
+                      <li class="shadow"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_5.jpg" alt="Avatar">
                           <div class="media-body ml-4 my-2">
                             <h5 class="h5 m-0">Королева Верстальщина</h5>
                             <div class="status small">Была онлайн вчера</div>
@@ -73,7 +73,7 @@
                   <li class="mb-3">
                     <div class="text-muted mt-5 mb-3">П</div>
                     <ul class="list-unstyled">
-                      <li class="border-bottom border-gray"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_6.jpg" alt="Avatar">
+                      <li class="shadow"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_6.jpg" alt="Avatar">
                           <div class="media-body ml-4 my-2">
                             <h5 class="h5 m-0">Питонист Джангович</h5>
                             <div class="status small">Был онлайн вчера</div>
@@ -84,8 +84,8 @@
               </div>
               <div class="tab-pane fade h-100" id="chats" role="tabpanel" aria-labelledby="chats-tab">
                 <h2 class="h2 font-weight-bold">Чаты</h2>
-                <ul class="chats list-unstyled">
-                  <li class="border-bottom border-gray"><a class="chats-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_4.jpg" alt="Avatar">
+                <ul class="block-scrollable list-unstyled">
+                  <li class="shadow"><a class="chats-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_4.jpg" alt="Avatar">
                       <div class="media-body ml-4 my-2 overflow-hidden">
                         <div class="d-flex justify-content-between">
                           <h5 class="h5 m-0">Вениамин Редакторович</h5>
@@ -93,7 +93,7 @@
                         </div>
                         <div class="small text-truncate">O_o</div>
                       </div></a></li>
-                  <li class="border-bottom border-gray"><a class="chats-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_2.jpg" alt="Avatar">
+                  <li class="shadow"><a class="chats-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_2.jpg" alt="Avatar">
                       <div class="media-body ml-4 my-2 overflow-hidden">
                         <div class="d-flex justify-content-between">
                           <h5 class="h5 m-0">Джедай Падаванов</h5>
@@ -101,7 +101,7 @@
                         </div>
                         <div class="small text-truncate">Привет, скоро третий проект? Уже скоро надо будет выложить</div>
                       </div></a></li>
-                  <li class="border-bottom border-gray"><a class="chats-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_3.jpg" alt="Avatar">
+                  <li class="shadow"><a class="chats-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_3.jpg" alt="Avatar">
                       <div class="media-body ml-4 my-2 overflow-hidden">
                         <div class="d-flex justify-content-between">
                           <h5 class="h5 m-0">Алексей Примадонин</h5>
@@ -110,6 +110,51 @@
                         <div class="small text-truncate">Тесты упали &gt;_&lt;</div>
                       </div></a></li>
                 </ul>
+              </div>
+              <div class="tab-pane fade h-100" id="profile">
+                <h2 class="h2 font-weight-bold">Профиль</h2>
+                <div class="block-scrollable ">
+                  <div class="card mb-3 text-center border-0">
+                    <div class="card-body"><img class="my-3 rounded-circle" width="90px" src="./images/avatar_1.jpg" alt="User photo in profile section">
+                      <p class="card-title mb-3 font-weight-bold">Кодовёнок Хекслетович</p>
+                      <p class="card-text mb-6 text-muted ">Милый и скромный помощник начинающих разработчиков. Люблю JavaScript</p>
+                    </div>
+                  </div>
+                  <ul class="list-group list-group-flush mt-4 pt-3 px-2">
+                    <li class="list-group-item mb-1 px-1 small border-gray">
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <div class="text-muted">Страна</div>
+                          <div>Москва, Россия</div>
+                        </div><img src="./images/icons/globe.svg" alt="Info item icon">
+                      </div>
+                    </li>
+                    <li class="list-group-item mb-1 px-1 small border-gray">
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <div class="text-muted">Телефон</div>
+                          <div>+7 (499) 123-45-67</div>
+                        </div><img src="./images/icons/telephone.svg" alt="Info item icon">
+                      </div>
+                    </li>
+                    <li class="list-group-item mb-1 px-1 small border-gray">
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <div class="text-muted">Email</div>
+                          <div>nikita.m@hexlet.io</div>
+                        </div><img src="./images/icons/envelope.svg" alt="Info item icon">
+                      </div>
+                    </li>
+                    <li class="list-group-item mb-1 px-1 small border-gray">
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <div class="text-muted">Twitter</div>
+                          <div>@n__mikhaylov</div>
+                        </div><img src="./images/icons/people.svg" alt="Info item icon">
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -123,7 +168,5 @@
       </div>
     </div>
   </body>
-  <script src="../../node_modules/jquery/dist/jquery.slim.min.js"></script>
-  <script src="../../node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./js/all.js"></script>
 </html>
