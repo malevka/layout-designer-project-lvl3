@@ -4,7 +4,7 @@ div(class="tab-pane fade h-100" id="chats" role="tabpanel" aria-labelledby="chat
     h2(class="h2 font-weight-bold") #{title}
     ul(class="block-scrollable list-unstyled")
       each item in chats
-        li(class="border-bottom border-gray")
+        li(class="shadow")
             a(href="#" class="chats-item media align-items-center p-3")
                 img(src=`.${item.avatar}` class="avatar" alt=`Avatar`)
                 div(class="media-body ml-4 my-2 overflow-hidden")

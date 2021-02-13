@@ -1,7 +1,14 @@
+$spacer: 1rem;
+$enable-shadows: true;
+
 $theme-colors: (
   "primary": #4545a5,
   "light": #fbfbfb,
   "gray": #efefef
+);
+
+$spacers: (
+  6: ($spacer * 2)
 );
 
 $grid-breakpoints: (
@@ -21,5 +28,5 @@ $container-max-widths: (
   xxl: 1540px
 );
 
-$enable-shadows: true;
+$box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.08);
 $grid-gutter-width: 0;

@@ -7,7 +7,7 @@ div(class="tab-pane show fade active h-100" id="contacts" role="tabpanel" aria-l
               div(class="text-muted mt-5 mb-3")= index
               each item in val
                   ul(class="list-unstyled")
-                      li(class="border-bottom border-gray")
+                      li(class="shadow")
                         a(href="#" class="contacts-item media align-items-center p-3")
                             img(src=`.${item.avatar}` class="avatar" alt=`Avatar`)
                             div(class="media-body ml-4 my-2")
