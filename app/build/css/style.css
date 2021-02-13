@@ -8262,7 +8262,7 @@ a.text-gray:hover, a.text-gray:focus {
     border-radius: 1rem !important; } }
 
 .block-scrollable {
-  height: 100%; }
+  height: calc(100% - 150px); }
   .block-scrollable {
     -ms-overflow-style: none;
     scrollbar-width: none;
