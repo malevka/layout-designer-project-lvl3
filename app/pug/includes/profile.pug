@@ -1,8 +1,10 @@
 - var title = "Профиль";
 - var user = { name: "Кодовёнок Хекслетович", avatar: "./images/avatar_1.jpg", about: "Милый и скромный помощник начинающих разработчиков. Люблю JavaScript"};
 - var info =[{title: "Страна", value: "Москва, Россия", icon: "./images/icons/globe.svg"}, {title: "Телефон", value: "+7 (499) 123-45-67", icon: "./images/icons/telephone.svg"}, {title: "Email", value: "nikita.m@hexlet.io", icon: "./images/icons/envelope.svg"},{title: "Twitter", value: "@n__mikhaylov", icon: "./images/icons/people.svg"}];
+- var searchSource = "сообщениям";
 div(id="profile" class="tab-pane fade h-100")
     h2(class="h2 font-weight-bold") #{title}
+    include search.pug
     div(class="block-scrollable ")
         div(class="card mb-3 text-center border-0")
             div(class="card-body")
