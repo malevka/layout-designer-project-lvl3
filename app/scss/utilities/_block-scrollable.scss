@@ -1,0 +1,5 @@
+.block-scrollable {
+  height: 100%;
+
+  @include hide-scrollbar;
+}
