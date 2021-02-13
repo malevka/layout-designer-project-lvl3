@@ -1,8 +1,8 @@
 - var items = [{icon: "./images/icons/logo.svg", href:"#" },{id: "contacts-tab",icon: "./images/icons/people.svg", text: "Контакты", href:"#contacts",controls: "contacts",selected: true},{id: "chats-tab",icon: "./images/icons/chat.svg", text: "Сообщения", href:"#chats",controls: "chats",selected: false},{id: "profile-tab",icon: "./images/icons/person.svg", text: "Профиль", href:"#profile",controls: "profile",selected: false}]
-div(class="header bg-primary text-light radius-md-left-top py-4" id="myTab" role="tablist")
+div(class="header bg-primary text-light radius-md-left-top py-4" id="menu" role="tablist")
     ul(class="nav nav-pills nav-fill h-100")
         each item in items
             li(class="nav-item h-100" role="presentation")
                 a(id=`${item.id}` class="text-light h-100" href=`${item.href}` role="pill" data-toggle="pill" aria-controls=`${item.controls}` aria-selected=`${item.selected}`)
-                    img(src=`${item.icon}` class="icon")
+                    img(src=`${item.icon}` class="icon" alt="Menu icon")
                     span(class="small ml-2") #{item.text}
