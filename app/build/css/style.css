@@ -8183,19 +8183,27 @@ a.text-gray:hover, a.text-gray:focus {
 .header {
   max-height: 4.5rem; }
 
-.icon,
-.cls-1 {
-  height: 100%; }
+.message {
+  max-width: 622px;
+  color: var(--secondary); }
+  .message .media-body {
+    background-color: var(--gray); }
+  .message.self .media-body {
+    background-color: var(--primary);
+    color: var(--light); }
+    .message.self .media-body .time {
+      color: var(--gray); }
+  .message.self {
+    align-self: flex-end; }
 
 .block-scrollable {
-  height: calc(100% - 150px); }
-  .block-scrollable {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow-x: hidden;
-    overflow-y: auto; }
-  .block-scrollable::-webkit-scrollbar {
-    display: none; }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.block-scrollable::-webkit-scrollbar {
+  display: none; }
 
 .border {
   border: 1px solid #efefef !important; }
