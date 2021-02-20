@@ -6,7 +6,7 @@
         { author: contact, message: { text: "Лады", time: "5 минут назад" } },
         { author: currentUser, message: { text: "А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие", time: "3 минуты назад" } },
         { author: contact, message: { text: "о_О", time: "Только что" } },];
-div(class=`${isRightBlock ? '' : 'd-md-none tab-pane fade'} h-100 d-flex flex-column` isRightBlock ? id="pills-dialog")
+div(class=`${isRightBlock ? '' : 'd-md-none tab-pane fade'} h-100 d-flex flex-column` id=`${isRightBlock ? 'pills-dialog-right' : 'pills-dialog'}`)
     div(class="media align-items-center p-3 sticky-top border-bottom")
         img(src=imagesPath+users[contact].avatar class="avatar" alt=`Avatar`)
         div(class="media-body ml-4 my-2")
