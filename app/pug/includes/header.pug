@@ -1,8 +1,42 @@
-- var items = [{icon: "./images/icons/logo.svg", href:"#" },{id: "contacts-tab",icon: "./images/icons/people.svg", text: "Контакты", href:"#contacts",controls: "contacts",selected: true},{id: "chats-tab",icon: "./images/icons/chat.svg", text: "Сообщения", href:"#chats",controls: "chats",selected: false},{id: "profile-tab",icon: "./images/icons/person.svg", text: "Профиль", href:"#profile",controls: "profile",selected: false}]
-div(class="header bg-primary text-light radius-md-left-top py-4" id="menu" role="tablist")
-    ul(class="nav nav-pills nav-fill h-100")
+-
+    var items = [{
+        id: "pills-contacts-tab",
+        iconId: "#people",
+        text: "Контакты",
+        href: "#pills-contacts",
+        controls: "pills-contacts",
+        selected: true,
+        active: true,
+    }, {
+        id: "pills-chats-tab",
+        iconId: "#chat",
+        text: "Сообщения",
+        href: "#pills-chats",
+        controls: "pills-chats",
+        selected: false
+    }, {
+        id: "pills-profile-tab",
+        iconId: "#person",
+        text: "Профиль",
+        href: "#pills-profile",
+        controls: "pills-profile",
+        selected: false
+    }];
+- var chatItem = {id: "pills-dialog-tab", iconId: "#chat-left-text", href:"#pills-dialog", controls: "pills-dialog", selected: false};
+nav(class="header navbar navbar-expand py-4 radius-md-left-top bg-primary")
+    div(class="h-100 flex-grow-1 flex-md-grow-0")
+        img(src="./images/icons/logo.svg" class="navbar-brand h-100 p-0" alt="Menu icon")
+    ul(class="navbar-nav nav navbar-collapse h-100 justify-content-around nav-pills" id="pills-tab" role="tablist")
+        if isChatPage
+            li(class="nav-item h-100 d-md-none" role="presentation")
+                a(id=`${chatItem.id}` class="text-light h-100" href=`${chatItem.href}` role="tab" data-toggle="tab" aria-controls=`${chatItem.controls}` aria-selected=`${chatItem.selected}`)
+                    //img(src=iconsPath+chatItem.iconId class="icon" alt="Menu icon")
+                    svg(width="25" class="h-100")
+                        use(xlink:href=iconsPath+chatItem.iconId)
         each item in items
-            li(class="nav-item h-100" role="presentation")
-                a(id=`${item.id}` class="text-light h-100" href=`${item.href}` role="pill" data-toggle="pill" aria-controls=`${item.controls}` aria-selected=`${item.selected}`)
-                    img(src=`${item.icon}` class="icon" alt="Menu icon")
-                    span(class="small ml-2") #{item.text}
+          li(class="nav-item h-100" role="presentation")
+              a(id=`${item.id}` class=`text-light h-100 text-decoration-none ` href=`${item.href}` role="tab" data-toggle="tab" aria-controls=`${item.controls}` aria-selected=`${item.selected}`)
+                  svg(width="25" class="h-100")
+                      use(xlink:href=iconsPath+item.iconId)
+                  //img(src=`${item.icon}` class="icon" alt="Menu icon")
+                  span(class="d-none d-md-inline-block small ml-2") #{item.text}
