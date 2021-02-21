@@ -40,9 +40,9 @@
             </clipPath>
         </defs>
     </symbol>
-    <symbol viewBox="0 0 157.33 267.55" id="logo" xmlns="http://www.w3.org/2000/svg">
+    <symbol viewBox="0 0 157.33 267.55" id="logo" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <defs>
-            <style>.fcls-1{fill:#1a1a1a}</style>
+            <style>.fcls-1{fill:currentColor}</style>
         </defs>
         <path fill="none" id="fcanvas_background" d="M-1-1h159.33v269.55H-1z"/>
         <g>

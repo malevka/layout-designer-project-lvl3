@@ -25,7 +25,9 @@
 - var chatItem = {id: "pills-dialog-tab", iconId: "#chat-left-text", href:"#pills-dialog", controls: "pills-dialog", selected: false};
 nav(class="header navbar navbar-expand py-4 radius-md-left-top bg-primary")
     div(class="h-100 flex-grow-1 flex-md-grow-0")
-        img(src="./images/icons/logo.svg" class="navbar-brand h-100 p-0" alt="Menu icon")
+        //img(src="./images/icons/logo.svg" class="navbar-brand h-100 p-0" alt="Menu icon")
+        svg(width="25" class="h-100 text-white")
+            use(xlink:href=`${iconsPath}#logo`)
     ul(class="navbar-nav nav navbar-collapse h-100 justify-content-around nav-pills" id="pills-tab" role="tablist")
         if isChatPage
             li(class="nav-item h-100 d-md-none" role="presentation")
