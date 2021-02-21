@@ -7,7 +7,7 @@ sass.compiler = nodeSass;
 const paths = {
   buildSrc: "app/scss/style.scss",
   watchSrc: "app/scss/",
-  dest: "app/build/css"
+  dest: "build/css"
 };
 
 export const watchStylesFiles = () => gulp.watch(paths.watchSrc, buildStyles);

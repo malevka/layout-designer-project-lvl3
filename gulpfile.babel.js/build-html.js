@@ -4,7 +4,7 @@ import pug from "gulp-pug";
 const paths = {
   buildSrc: ["app/pug/index.pug","app/pug/chat.pug"],
   watchSrc: "app/pug/",
-  dest: "app/build/"
+  dest: "build/"
 };
 
 export const watchPugFiles = () => gulp.watch(paths.watchSrc, buildHtml);
