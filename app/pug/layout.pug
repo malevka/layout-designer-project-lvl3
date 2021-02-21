@@ -1,7 +1,7 @@
 include data.pug
 - var currentUser = "user1";
 doctype html
-html
+html(lang="ru")
     include includes/head.pug
     body(class="bg-gray")
         div(class="container-xxl vh-100 bg-gray p-md-4 overflow-hidden")
@@ -11,4 +11,4 @@ html
                         block left
                 div(class="h-100 right-side d-none d-xl-block col-xl-8")
                     block right
-    script(src="./js/all.js")
+        script(src="./js/all.js")
