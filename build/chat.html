@@ -14,6 +14,11 @@
             <nav class="header navbar navbar-expand py-4 radius-md-left-top bg-primary">
               <div class="h-100 flex-grow-1 flex-md-grow-0"><img class="navbar-brand h-100 p-0" src="./images/icons/logo.svg" alt="Menu icon"></div>
               <ul class="navbar-nav nav navbar-collapse h-100 justify-content-around nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item h-100 d-md-none" role="presentation"><a class="text-light h-100" id="pills-dialog-tab" href="#pills-dialog" role="tab" data-toggle="tab" aria-controls="pills-dialog" aria-selected="false">
+                    <!--img(src=iconsPath+chatItem.iconId class="icon" alt="Menu icon")-->
+                    <svg class="h-100" width="25">
+                      <use xlink:href="./images/icons/sprite.symbol.svg#chat-left-text"></use>
+                    </svg></a></li>
                 <li class="nav-item h-100" role="presentation"><a class="text-light h-100 text-decoration-none " id="pills-contacts-tab" href="#pills-contacts" role="tab" data-toggle="tab" aria-controls="pills-contacts" aria-selected="true">
                     <svg class="h-100" width="25">
                       <use xlink:href="./images/icons/sprite.symbol.svg#people"></use>
@@ -41,7 +46,7 @@
                   <li class="mb-5">
                     <div class="text-muted mb-3">А
                       <ul class="list-unstyled">
-                        <li class="shadow mb-3"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_3.jpg" alt="Avatar">
+                        <li class="shadow mb-3"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="images/avatar_3.jpg" alt="Avatar">
                             <div class="media-body ml-4 my-2">
                               <h6 class="m-0">Алексей Примадонин</h6>
                               <div class="status small">Онлайн</div>
@@ -52,7 +57,7 @@
                   <li class="mb-5">
                     <div class="text-muted mb-3">B
                       <ul class="list-unstyled">
-                        <li class="shadow mb-3"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_4.jpg" alt="Avatar">
+                        <li class="shadow mb-3"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="images/avatar_4.jpg" alt="Avatar">
                             <div class="media-body ml-4 my-2">
                               <h6 class="m-0">Вениамин Редакторович</h6>
                               <div class="status small">Онлайн</div>
@@ -63,7 +68,7 @@
                   <li class="mb-5">
                     <div class="text-muted mb-3">Д
                       <ul class="list-unstyled">
-                        <li class="shadow mb-3"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_2.jpg" alt="Avatar">
+                        <li class="shadow mb-3"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="images/avatar_2.jpg" alt="Avatar">
                             <div class="media-body ml-4 my-2">
                               <h6 class="m-0">Джедай Падаванов</h6>
                               <div class="status small">Был онлайн вчера</div>
@@ -74,12 +79,12 @@
                   <li class="mb-5">
                     <div class="text-muted mb-3">К
                       <ul class="list-unstyled">
-                        <li class="shadow mb-3"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_1.jpg" alt="Avatar">
+                        <li class="shadow mb-3"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="images/avatar_1.jpg" alt="Avatar">
                             <div class="media-body ml-4 my-2">
                               <h6 class="m-0">Кодовёнок Хекслетович</h6>
                               <div class="status small">Был онлайн 3 часа назад</div>
                             </div></a></li>
-                        <li class="shadow mb-3"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_5.jpg" alt="Avatar">
+                        <li class="shadow mb-3"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="images/avatar_5.jpg" alt="Avatar">
                             <div class="media-body ml-4 my-2">
                               <h6 class="m-0">Королева Верстальщина</h6>
                               <div class="status small">Была онлайн вчера</div>
@@ -90,7 +95,7 @@
                   <li class="mb-5">
                     <div class="text-muted mb-3">П
                       <ul class="list-unstyled">
-                        <li class="shadow mb-3"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_6.jpg" alt="Avatar">
+                        <li class="shadow mb-3"><a class="contacts-item media align-items-center p-3" href="#"><img class="avatar" src="images/avatar_6.jpg" alt="Avatar">
                             <div class="media-body ml-4 my-2">
                               <h6 class="m-0">Питонист Джангович</h6>
                               <div class="status small">Была онлайн вчера</div>
@@ -106,7 +111,7 @@
                   <input class="form-control form-control-lg px-4 py-3 border-0 shadow-none" type="text" placeholder="Поиск по сообщениям">
                 </form>
                 <ul class="h-75 block-scrollable list-unstyled">
-                  <li class="shadow"><a class="chats-item media align-items-center p-3" href="chat.html"><img class="avatar" src="./images/avatar_4.jpg" alt="Avatar">
+                  <li class="shadow"><a class="chats-item media align-items-center p-3" href="chat.html"><img class="avatar" src="images/avatar_4.jpg" alt="Avatar">
                       <div class="media-body ml-4 my-2 overflow-hidden">
                         <div class="d-flex justify-content-between">
                           <h6 class="h5 m-0">Вениамин Редакторович</h6>
@@ -114,7 +119,7 @@
                         </div>
                         <div class="small text-truncate">O_o</div>
                       </div></a></li>
-                  <li class="shadow"><a class="chats-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_2.jpg" alt="Avatar">
+                  <li class="shadow"><a class="chats-item media align-items-center p-3" href="#"><img class="avatar" src="images/avatar_2.jpg" alt="Avatar">
                       <div class="media-body ml-4 my-2 overflow-hidden">
                         <div class="d-flex justify-content-between">
                           <h6 class="h5 m-0">Джедай Падаванов</h6>
@@ -122,7 +127,7 @@
                         </div>
                         <div class="small text-truncate">Привет, скоро третий проект? Уже скоро надо будет выложить</div>
                       </div></a></li>
-                  <li class="shadow"><a class="chats-item media align-items-center p-3" href="#"><img class="avatar" src="./images/avatar_3.jpg" alt="Avatar">
+                  <li class="shadow"><a class="chats-item media align-items-center p-3" href="#"><img class="avatar" src="images/avatar_3.jpg" alt="Avatar">
                       <div class="media-body ml-4 my-2 overflow-hidden">
                         <div class="d-flex justify-content-between">
                           <h6 class="h5 m-0">Алексей Примадонин</h6>
@@ -139,7 +144,7 @@
                 </form>
                 <div class="h-75 block-scrollable ">
                   <div class="card mb-3 text-center border-0">
-                    <div class="card-body"><img class="my-3 rounded-circle" width="90px" src="./images/avatar_1.jpg" alt="User photo in profile section">
+                    <div class="card-body"><img class="my-3 rounded-circle" width="90px" src="images/avatar_1.jpg" alt="User photo in profile section">
                       <p class="card-title mb-3 font-weight-bold">Кодовёнок Хекслетович</p>
                       <p class="card-text mb-6 text-muted ">Милый и скромный помощник начинающих разработчиков. Люблю JavaScript</p>
                     </div>
@@ -192,17 +197,141 @@
                   </ul>
                 </div>
               </div>
+              <div class="d-md-none tab-pane fade h-100 d-flex flex-column" id="pills-dialog">
+                <div class="media align-items-center p-3 sticky-top border-bottom"><img class="avatar" src="images/avatar_4.jpg" alt="Avatar">
+                  <div class="media-body ml-4 my-2">
+                    <h6 class="text-dark">Вениамин Редакторович</h6>
+                    <div class="status small text-muted">Онлайн</div>
+                  </div>
+                </div>
+                <div class="block-scrollable px-md-5 px-4 pt-5">
+                  <ul class="list-unstyled d-flex flex-column">
+                    <li class="message media mb-3 ">
+                      <div class="media align-items-end"><img class="d-none d-md-block avatar mr-3" src="images/avatar_4.jpg" alt="Avatar">
+                        <div class="media-body p-4 radius shadow">
+                          <h6 class="mb-1 text-dark">Вениамин Редакторович</h6>
+                          <div class="pb-2 border-bottom mb-1">Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?</div>
+                          <div class="time small">8 минут назад</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="message media mb-3 self">
+                      <div class="media align-items-end"><img class="d-none d-md-block avatar mr-3" src="images/avatar_1.jpg" alt="Avatar">
+                        <div class="media-body p-4 radius shadow">
+                          <div class="pb-2 border-bottom mb-1">Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень</div>
+                          <div class="time small">5 минут назад</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="message media mb-3 ">
+                      <div class="media align-items-end"><img class="d-none d-md-block avatar mr-3" src="images/avatar_4.jpg" alt="Avatar">
+                        <div class="media-body p-4 radius shadow">
+                          <h6 class="mb-1 text-dark">Вениамин Редакторович</h6>
+                          <div class="pb-2 border-bottom mb-1">Лады</div>
+                          <div class="time small">5 минут назад</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="message media mb-3 self">
+                      <div class="media align-items-end"><img class="d-none d-md-block avatar mr-3" src="images/avatar_1.jpg" alt="Avatar">
+                        <div class="media-body p-4 radius shadow">
+                          <div class="pb-2 border-bottom mb-1">А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие</div>
+                          <div class="time small">3 минуты назад</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="message media mb-3 ">
+                      <div class="media align-items-end"><img class="d-none d-md-block avatar mr-3" src="images/avatar_4.jpg" alt="Avatar">
+                        <div class="media-body p-4 radius shadow">
+                          <h6 class="mb-1 text-dark">Вениамин Редакторович</h6>
+                          <div class="pb-2 border-bottom mb-1">о_О</div>
+                          <div class="time small">Только что</div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <form class="mx-md-5 mx-2 pr-md-2 form-inline justify-content-between border-top border-gray py-2">
+                  <input class="flex-grow-1  p-4 border-0 shadow-none" type="text" placeholder="Напишите сообщение...">
+                  <button class="btn btn-primary d-flex align-items-center rounded-circle p-2 mx-2" type="submit">
+                    <!--img(src="./images/icons/cursor.svg" class="text-light m-1")-->
+                    <svg class="text-white" width="20" height="20">
+                      <use xlink:href="./images/icons/sprite.symbol.svg#cursor"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
         <div class="h-100 right-side d-none d-xl-block col-xl-8">
-          <div class="d-flex flex-column align-items-center justify-content-center h-100"><img class="rounded-circle mb-3" src="./images/avatar_1.jpg" alt="Avatar">
-            <h6 class="h6 m-0 text-center">Привет, Кодовёнок</h6>
-            <div class="small text-center text-muted">Выбери чат, чтобы начать общаться</div>
+          <div class=" h-100 d-flex flex-column" id="pills-dialog-right">
+            <div class="media align-items-center p-3 sticky-top border-bottom"><img class="avatar" src="images/avatar_4.jpg" alt="Avatar">
+              <div class="media-body ml-4 my-2">
+                <h6 class="text-dark">Вениамин Редакторович</h6>
+                <div class="status small text-muted">Онлайн</div>
+              </div>
+            </div>
+            <div class="block-scrollable px-md-5 px-4 pt-5">
+              <ul class="list-unstyled d-flex flex-column">
+                <li class="message media mb-3 ">
+                  <div class="media align-items-end"><img class="d-none d-md-block avatar mr-3" src="images/avatar_4.jpg" alt="Avatar">
+                    <div class="media-body p-4 radius shadow">
+                      <h6 class="mb-1 text-dark">Вениамин Редакторович</h6>
+                      <div class="pb-2 border-bottom mb-1">Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?</div>
+                      <div class="time small">8 минут назад</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="message media mb-3 self">
+                  <div class="media align-items-end"><img class="d-none d-md-block avatar mr-3" src="images/avatar_1.jpg" alt="Avatar">
+                    <div class="media-body p-4 radius shadow">
+                      <div class="pb-2 border-bottom mb-1">Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень</div>
+                      <div class="time small">5 минут назад</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="message media mb-3 ">
+                  <div class="media align-items-end"><img class="d-none d-md-block avatar mr-3" src="images/avatar_4.jpg" alt="Avatar">
+                    <div class="media-body p-4 radius shadow">
+                      <h6 class="mb-1 text-dark">Вениамин Редакторович</h6>
+                      <div class="pb-2 border-bottom mb-1">Лады</div>
+                      <div class="time small">5 минут назад</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="message media mb-3 self">
+                  <div class="media align-items-end"><img class="d-none d-md-block avatar mr-3" src="images/avatar_1.jpg" alt="Avatar">
+                    <div class="media-body p-4 radius shadow">
+                      <div class="pb-2 border-bottom mb-1">А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие</div>
+                      <div class="time small">3 минуты назад</div>
+                    </div>
+                  </div>
+                </li>
+                <li class="message media mb-3 ">
+                  <div class="media align-items-end"><img class="d-none d-md-block avatar mr-3" src="images/avatar_4.jpg" alt="Avatar">
+                    <div class="media-body p-4 radius shadow">
+                      <h6 class="mb-1 text-dark">Вениамин Редакторович</h6>
+                      <div class="pb-2 border-bottom mb-1">о_О</div>
+                      <div class="time small">Только что</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <form class="mx-md-5 mx-2 pr-md-2 form-inline justify-content-between border-top border-gray py-2">
+              <input class="flex-grow-1  p-4 border-0 shadow-none" type="text" placeholder="Напишите сообщение...">
+              <button class="btn btn-primary d-flex align-items-center rounded-circle p-2 mx-2" type="submit">
+                <!--img(src="./images/icons/cursor.svg" class="text-light m-1")-->
+                <svg class="text-white" width="20" height="20">
+                  <use xlink:href="./images/icons/sprite.symbol.svg#cursor"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </body>
-  <script src="./js/all.js"></script>
+  <script src="js/all.js"></script>
 </html>

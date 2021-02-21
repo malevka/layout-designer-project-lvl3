@@ -20,13 +20,13 @@ const config = {
 const scripts = () => {
   return gulp.src(["node_modules/jquery/dist/jquery.slim.min.js", "node_modules/popper.js/dist/umd/popper.min.js","node_modules/bootstrap/dist/js/bootstrap.min.js "])
     .pipe(concat('all.js'))
-    .pipe(gulp.dest('app/build/js/'));
+    .pipe(gulp.dest('build/js/'));
 };
 
 const buildSvgSprites = () => {
   return gulp.src("app/images/icons/*.svg")
     .pipe(svgSprite(config))
-    .pipe(gulp.dest("app/build/images/"));
+    .pipe(gulp.dest("build/images/"));
 };
 
 const build = () => gulp.parallel(buildHtml, buildStyles);

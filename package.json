@@ -5,8 +5,8 @@
  "main": "",
  "scripts": {
   "stylelint": "stylelint ./app/scss/**/*.scss",
-  "htmlhint": "htmlhint ./app/build/*.html",
-  "deploy": "surge ./app/build"
+  "htmlhint": "htmlhint build/*.html",
+  "deploy": "surge build"
  },
  "repository": {
   "type": "git",
