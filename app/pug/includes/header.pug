@@ -5,15 +5,14 @@
         text: "Контакты",
         href: "#contacts",
         controls: "pills-contacts",
-        selected: true,
-        active: true,
+        selected: (!isChatPage ? true: false ),
     }, {
         id: "pills-chats-tab",
         iconId: "#chat",
         text: "Сообщения",
         href: "#chats",
         controls: "pills-chats",
-        selected: false
+        selected: (isChatPage ? true: false )
     }, {
         id: "pills-profile-tab",
         iconId: "#person",

@@ -1,7 +1,7 @@
 - var contacts = {А: ["user3"], B: ["user4"],Д: ["user2"],К: ["user1", "user5"],П: ["user6"]};
 - var title = "Контакты";
 - var searchSource = "контактам";
-div(class="tab-pane show fade active h-100 mt-5 mx-4 " id="contacts" role="tabpanel" aria-labelledby="pills-contacts-tab")
+div(class=`tab-pane show fade h-100 mt-5 mx-4 ${isChatPage ? "" : "active"}` id="contacts" role="tabpanel" aria-labelledby="pills-contacts-tab")
     h2(class="font-weight-bold") #{title}
     include search.pug
     ul(class="h-75 block-scrollable list-unstyled")
