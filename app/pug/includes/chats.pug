@@ -15,6 +15,6 @@ div(class=`tab-pane fade show h-100 mt-5 mx-4 ${isChatPage ? "active" : ""}` id=
                 img(src=imagesPath+users[item.user].avatar class="avatar" alt=`Avatar`)
                 div(class="media-body ml-4 my-2 overflow-hidden")
                     div(class="d-flex justify-content-between")
-                        h6(class="h5 m-0") #{users[item.user].first_name} #{users[item.user].last_name}
+                        div(class="font-weight-bold m-0") #{users[item.user].first_name} #{users[item.user].last_name}
                         div(class="small text-muted") #{item.last_message.time}
                     div(class="small text-truncate") #{item.last_message.text}

@@ -28,5 +28,5 @@ $container-max-widths: (
   xxl: 1540px
 );
 
-$box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.08);
+$box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.08), inset 0 0 0.125rem rgba(0, 0, 0, 0.08);
 $grid-gutter-width: 0;
