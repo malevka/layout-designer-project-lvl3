@@ -8187,7 +8187,7 @@ a.text-gray:hover, a.text-gray:focus {
   max-width: 622px;
   color: var(--secondary); }
   .message .media-body {
-    background-color: var(--gray); }
+    background-color: var(--light); }
   .message.self .media-body {
     color: var(--light);
     background-color: var(--primary); }
