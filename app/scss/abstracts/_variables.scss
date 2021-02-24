@@ -30,3 +30,14 @@ $container-max-widths: (
 
 $box-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.08), inset 0 0 0.125rem rgba(0, 0, 0, 0.08);
 $grid-gutter-width: 0;
+
+$radius-value: 1rem;
+$radiuses: (
+  "left-top" : "border-top-left-radius",
+  "left" : ("border-top-left-radius", "border-bottom-left-radius"),
+  "right" : ("border-top-right-radius", "border-bottom-right-radius"),
+);
+
+$border-value: 1px solid #efefef !important;
+
+$borders: "top","right", "left", "bottom";
