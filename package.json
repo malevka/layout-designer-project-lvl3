@@ -4,9 +4,7 @@
  "version": "1.0.0",
  "main": "",
  "scripts": {
-  "stylelint": "stylelint ./app/scss/**/*.scss",
-  "htmlhint": "htmlhint build/*.html",
-  "deploy": "surge build"
+  "test": "echo \"Error: no test specified\" && exit 1"
  },
  "repository": {
   "type": "git",
