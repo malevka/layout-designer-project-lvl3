@@ -6,7 +6,7 @@
         { author: contact, message: { text: "Лады", time: "5 минут назад" } },
         { author: currentUser, message: { text: "А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие", time: "3 минуты назад" } },
         { author: contact, message: { text: "о_О", time: "Только что" } },];
-div(class=`${isRightBlock ? '' : 'd-md-none tab-pane fade'} h-100 d-flex flex-column` id=`${isRightBlock ? 'current-chat-right' : 'current-chat'}`)
+div(class=`${isRightBlock ? '' : 'd-xl-none tab-pane fade'} h-100 d-flex flex-column` id=`${isRightBlock ? 'current-chat-right' : 'current-chat'}`)
     div(class="media align-items-center p-3 sticky-top border-bottom")
         img(src=imagesPath+users[contact].avatar class="avatar" alt=`Avatar`)
         div(class="media-body ml-4 my-2")
@@ -17,7 +17,7 @@ div(class=`${isRightBlock ? '' : 'd-md-none tab-pane fade'} h-100 d-flex flex-co
             each message in messages
               li(class=`message media mb-3 ${message.author === currentUser ? 'self' : ''}`)
                 div(class="media align-items-end")
-                    img(src=imagesPath+users[message.author].avatar class="d-none d-md-block avatar mr-3" alt=`Avatar`)
+                    img(src=imagesPath+users[message.author].avatar class="d-none d-xl-block avatar mr-3" alt=`Avatar`)
                     div(class="media-body p-4 radius shadow")
                         if message.author === contact
                             div(class="font-weight-bold mb-1 text-dark") #{users[contact].first_name} #{users[contact].last_name}
