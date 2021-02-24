@@ -12,7 +12,7 @@ div(class=`${isRightBlock ? '' : 'd-md-none tab-pane fade'} h-100 d-flex flex-co
         div(class="media-body ml-4 my-2")
             div(class="font-weight-bold text-dark") #{users[contact].first_name} #{users[contact].last_name}
             div(class="status small text-muted") #{statuses[contact]}
-    div(class="block-scrollable px-md-5 px-4 pt-5")
+    div(class="block-scrollable px-5 pt-5")
         ul(class="list-unstyled d-flex flex-column")
             each message in messages
               li(class=`message media mb-3 ${message.author === currentUser ? 'self' : ''}`)
