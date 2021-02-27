@@ -1,27 +1,38 @@
 -
-    var items = [{
-        id: "pills-contacts-tab",
-        iconId: "#people",
-        text: "Контакты",
-        href: "#contacts",
-        controls: "pills-contacts",
-        selected: (!isChatPage ? true: false ),
-    }, {
-        id: "pills-chats-tab",
-        iconId: "#chat",
-        text: "Сообщения",
-        href: "#chats",
-        controls: "pills-chats",
-        selected: (isChatPage ? true: false )
-    }, {
-        id: "pills-profile-tab",
-        iconId: "#person",
-        text: "Профиль",
-        href: "#profile",
-        controls: "pills-profile",
-        selected: false
-    }];
-- var chatItem = {id: "pills-dialog-tab", iconId: "#chat-left-text", href:"#current-chat", controls: "pills-dialog", selected: false};
+    var items = [
+            {
+                id: "pills-contacts-tab",
+                iconId: "#people",
+                text: "Контакты",
+                href: "#contacts",
+                controls: "pills-contacts",
+                selected: !isChatPage ? true : false,
+            },
+            {
+                id: "pills-chats-tab",
+                iconId: "#chat",
+                text: "Сообщения",
+                href: "#chats",
+                controls: "pills-chats",
+                selected: isChatPage ? true : false,
+            },
+            {
+                id: "pills-profile-tab",
+                iconId: "#person",
+                text: "Профиль",
+                href: "#profile",
+                controls: "pills-profile",
+                selected: false,
+            },
+        ];
+-
+    var chatItem = {
+            id: "pills-dialog-tab",
+            iconId: "#chat-left-text",
+            href: "#current-chat",
+            controls: "pills-dialog",
+            selected: false,
+            };
 nav(class="header navbar navbar-expand py-4 radius-xl-left-top bg-primary")
     div(class="h-100 flex-grow-1 flex-xl-grow-0")
         svg(width="25" class="h-100 text-white")

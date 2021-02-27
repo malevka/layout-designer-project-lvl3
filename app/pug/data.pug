@@ -2,58 +2,76 @@
 - var iconsPath = `${imagesPath}icons/sprite.symbol.svg`;
 -
     var users = {
-        user1:
-                {
-                    first_name: "Кодовёнок",
-                    last_name: "Хекслетович",
-                    about: "Милый и скромный помощник начинающих разработчиков. Люблю JavaScript",
-                    avatar: "avatar_1.jpg"
-                },
-        user2:
-                {
-                    first_name: "Джедай",
-                    last_name: "Падаванов",
-                    avatar: "avatar_2.jpg"
-                },
-        user3:
-                {
-                    first_name: "Алексей",
-                    last_name: "Примадонин",
-                    avatar: "avatar_3.jpg"
-                },
-        user4:
-                {
-                    first_name: "Вениамин",
-                    last_name: "Редакторович",
-                    avatar: "avatar_4.jpg"
-                },
-        user5:
-                {
-                    first_name: "Королева",
-                    last_name: "Верстальщина",
-                    avatar: "avatar_5.jpg"
-                },
-        user6:
-                {
-                    first_name: "Питонист",
-                    last_name: "Джангович",
-                    avatar: "avatar_6.jpg"
-                }
-    }
+            user1: {
+                first_name: "Кодовёнок",
+                last_name: "Хекслетович",
+                about:
+                        "Милый и скромный помощник начинающих разработчиков. Люблю JavaScript",
+                avatar: "avatar_1.jpg",
+            },
+            user2: {
+                first_name: "Джедай",
+                last_name: "Падаванов",
+                avatar: "avatar_2.jpg",
+            },
+            user3: {
+                first_name: "Алексей",
+                last_name: "Примадонин",
+                avatar: "avatar_3.jpg",
+            },
+            user4: {
+                first_name: "Вениамин",
+                last_name: "Редакторович",
+                avatar: "avatar_4.jpg",
+            },
+            user5: {
+                first_name: "Королева",
+                last_name: "Верстальщина",
+                avatar: "avatar_5.jpg",
+            },
+            user6: {
+                first_name: "Питонист",
+                last_name: "Джангович",
+                avatar: "avatar_6.jpg",
+            },
+        };
 -
     var statuses = {
-        user1: "Был онлайн 3 часа назад",
-        user2: "Был онлайн вчера",
-        user3: "Онлайн",
-        user4: "Онлайн",
-        user5: "Была онлайн вчера",
-        user6: "Была онлайн вчера"
-    }
+            user1: "Был онлайн 3 часа назад",
+            user2: "Был онлайн вчера",
+            user3: "Онлайн",
+            user4: "Онлайн",
+            user5: "Была онлайн вчера",
+            user6: "Была онлайн вчера",
+        };
 -
     var user_info = {
-        user1: [
-            { title: "Страна", value: "Москва, Россия", iconId: "#globe" },
-            { title: "Телефон", value: "+7 (499) 123-45-67", iconId: "#telephone" },
-            { title: "Email", value: "nikita.m@hexlet.io", iconId: "#envelope" },
-            { title: "Twitter", value: "@n__mikhaylov", iconId: "#people" }]
-    };
+            user1: [
+                { title: "Страна", value: "Москва, Россия", iconId: "#globe" },
+                { title: "Телефон", value: "+7 (499) 123-45-67", iconId: "#telephone" },
+                { title: "Email", value: "nikita.m@hexlet.io", iconId: "#envelope" },
+                { title: "Twitter", value: "@n__mikhaylov", iconId: "#people" },
+            ],
+        };
+
+-
+    var chats = [
+        {
+            user: "user4",
+            last_message: { text: "O_o", time: "11:45" },
+            href: "chat.html",
+        },
+        {
+            user: "user2",
+            last_message: {
+                text: "Привет, скоро третий проект? Уже скоро надо будет выложить",
+                time: "10:12",
+            },
+            href: "#",
+        },
+        {
+            user: "user3",
+            last_message: { text: "Тесты упали >_<", time: "08:53" },
+            href: "#",
+        },
+    ];
